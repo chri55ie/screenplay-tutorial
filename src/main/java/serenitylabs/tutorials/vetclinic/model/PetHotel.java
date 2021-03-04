@@ -22,9 +22,8 @@ public class PetHotel {
         this.waitingList = waitingList;
     }
 
-    public PetHotel(String name) {
-        this(name, new GuestList(), new WaitingList());
-    }
+   public PetHotel(String name) {
+   this(name, new GuestList(), new WaitingList()); }
 
     public List<Pet> getPets() {
         return guestList.getGuests();
